@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="image/Favicon1.png">
+    <title> Form Document</title>
+    <style>
+        form { 
+            margin: 20px;
+            line-height: 50pxpx; 
+            background-color: burlywood;
+            background-image: url();
+        } 
+        
+        button {
+            background-color: blueviolet;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <form action="practice.html" method="post">
+    <fieldset>
+        <p id="test"> Welcome </p>
+        <h1>Form with Various Attributes</h1>
+        <!-- Text Input with max, maxlength, readonly -->
+        <label for="username">Username (max 20 chars, read-only):</label>
+        <input type="text" id="username" name="username" maxlength="20" value="yogalakshmi" readonly><br><br>
+        
+        <!-- Password Input with pattern, required -->
+        <label for="password">Password (required, pattern: 8-20 chars):</label>
+        <input type="password" id="password" name="password" pattern=".{8,20}" required><br><br>
+        
+        <!-- Number Input with min, max, step -->
+        <label for="age">Age (min: 18, max: 99, step: 1):</label>
+        <input type="number" id="age" name="age" min="18" max="99" step="1"><br><br>
+        
+        <!-- Email Input with required -->
+        <label for="email">Email (required):</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Textarea with maxlength, readonly -->
+        <label for="bio">Bio (max 100 chars, read-only):</label>
+        <textarea id="bio" name="bio" maxlength="100" readonly>This is a read-only bio.</textarea><br><br>
+        
+        <!-- Dropdown with disabled option -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk" disabled>United Kingdom</option>
+        </select><br><br>
+    
+        <!-- Radio buttons with required -->
+        <label>Gender (required):</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+        
+        <!-- Date Input with min and max -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" min="1900-01-01" max="2024-12-31"><br><br>
+        
+        <!-- Range Input with min, max, step, value -->
+        <label for="volume">Volume (range 0-100, step 5):</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="4 " value="90"><br><br>
+
+        <!-- Datetime-local Input -->
+        <label for="datetime-local">Datetime-local:</label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local"><br><br>
+
+        <!-- File Input -->
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Month Input -->
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month"><br><br>
+
+        <!-- Number Input -->
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="10" step="1"><br><br>
+
+        <!-- Checkbox with checked -->
+        <label for="Agree">I Agree:</label>
+        <input type="checkbox" id="Agree" name="Agree" checked><br><br>
+
+        <!-- Reset Button -->
+        <label for="reset">Reset Button:</label>
+        <input type="reset" id="reset" value="Reset"><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+   
+</body>
+</html>
+    <!--<form action="practice.html" method="post">
+        <fieldset>
+            <legend> REGISTER FORM</legend>
+            <lable for="username"> Name</lable>
+            <input type="text" name="username" id="username" placeholder="Enter your name"><br><br>
+
+            <lable for="email"> Email</lable>
+            <input type="email" name="email" id="email" value="Enter your email"><br><br>
+
+            <lable for="password"> Password</lable>
+            <input type="password" name="password" id="password" placeholder="Enter password" required><br><br>
+
+            <lable for="birthdate"> Date of birth  </lable>
+            <input type="Date" name="birthdate" id="birthdate"  required><br><br>
+
+            <lable for="review">Review</lable>
+            <textarea name="review" id="review">Text here </textarea> <br><br>
+
+            <input type="checkbox" name="accept" id="accept">
+            <lable for="accept"> I Accept</lable> <br><br>
+
+            <input type="radio" name="gender" id="male" value="male">
+            <lable for="male"> Male</lable> 
+            <input type="radio" name="gender" id="female" value="female">
+            <lable for="female"> Female</lable> 
+            <input type="radio" name="gender" id="other" value="other">
+            <lable for="other"> Other</lable> <br><br>
+
+            <button type="submit" >Submit</button>
+            <button type="reset" >Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>-->
